@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="~/Css/slick-theme.css" />
+    <link rel="stylesheet" href="~/Css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/Css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="~/Css/bootstrap.min.css" />
+
+</head>
+<body>
+    <!-- home nar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-color">
+        <img src="~/image/odabs_logo.png" style="width: 56px;height: 56px;">
+        <a class="navbar-logo" href="#">ODABS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    @Html.ActionLink("Home", "Index", "Home", new { area = "Doctor" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Appoinments", "DocAppoinment", "Home", new { area = "Doctor" }, new { @class = "nav-link" })
+                </li>
+
+                <li class="nav-item">
+                    @Html.ActionLink("Blogs", "DocPostBlogs", "Home", new { area = "Doctor" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("History", "DocConsoleHistory", "Home", new { area = "Doctor" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Profile", "DocProfile", "Home", new { area = "Doctor" }, new { @class = "nav-link" })
+                </li>
+
+            </ul>
+            @Html.Partial("_LoginPartial")
+        </div>
+    </nav>
+    <!-- home nar section -->
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <!-- home  footer section -->
+    <div class="container">
+        <div class="footer_body_icon">
+            <div class="footer_icon">
+                <i class='fab fa-facebook-square' style='font-size:48px;color:blue'></i>
+            </div>
+            <div class="footer_icon">
+                <i class='fab fa-instagram' style='font-size:48px;color:#FF33CC'></i>
+            </div>
+            <div class="footer_icon">
+                <i class='fab fa-twitter-square' style='font-size:48px;color:#05C4F4'></i>
+            </div>
+            <div class="footer_icon">
+                <i class='fab fa-youtube' style='font-size:48px;color:red'></i>
+            </div>
+        </div>
+
+        <div class="footer_body">
+            <div class="footer_text">
+                <h3>Home</h3>
+            </div>
+            <div class="footer_text">
+                <h3>Appoinment</h3>
+            </div>
+            <div class="footer_text">
+                <h3>Blogs</h3>
+            </div>
+            <div class="footer_text">
+                <h3>Profile</h3>
+            </div>
+            <div class="footer_text">
+                <h3>History</h3>
+            </div>
+        </div>
+    </div>
+    <!-- home  footer section -->
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="~/js/jquery-3.4.1.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/slick.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

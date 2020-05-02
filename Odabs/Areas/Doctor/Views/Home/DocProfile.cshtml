@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "DocProfile";
+    Layout = "~/Areas/Doctor/Views/Shared/DocHome_layout.cshtml";
+}
+
+
+<!-- help center breadcrumb section -->
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Doctor Profile</li>
+    </ol>
+</nav>
+
+<!-- help center breadcrumb section -->
+<!-- profile info  section -->
+
+<div class="container">
+    <div class="middle_section_body">
+        <div class="row">
+
+            <div class="col-8">
+
+                <div class="profile_body profile_display">
+                    <div class="profile_img_sec">
+                        <img src="~/image/doctor_details.jpg" alt="">
+                        <button>Edit Profile</button>
+                    </div>
+
+                    <div class="profile_text_sec ">
+                        <div class="profile_text">
+                            <label>Name  :</label><label>Dr. Injamul haque</label>
+                        </div>
+                        <div class="profile_text">
+                            <label>Date of Birth : </label><label>31/01/1988</label>
+                        </div>
+                        <div class="profile_text">
+                            <label>Gender : </label><label>Male</label>
+                        </div>
+                        <div class="profile_text">
+                            <label>Specialized in : </label><label> General Surjery </label>
+                        </div>
+                        <div class="profile_text">
+                            <label>Consultation Time :  </label><label>6 PM - 9 PM </label>
+                        </div>
+                        <div class="profile_text">
+                            <label>Educational Background :   </label><label>
+                                MBBS (MMC),
+                                MS (Orthopaedic Surgery),
+                                BCS,
+                                AO Fellow (Zurich University Hospital, Switzerland),
+                                Fellow Ortho Trauma (Chiang Mai University, Thailand),
+                                Trained in Plastic Surgery
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8">
+            <div class="profile_body">
+                <div class="row">
+                    <div class="col">
+                        <div class="bottom_part_text_1">
+                            <h3>Consultation History</h3>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bottom_part_text_2">
+                            <h3>Sort By </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+
+                                <th scope="col">Patient ID</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Patient Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>121</td>
+                                <td>9:40 PM -  9:50 PM</td>
+                                <td>Tunazzin Topu</td>
+                            </tr>
+                            <tr>
+
+                                <td>121</td>
+                                <td>9:40 PM -  9:50 PM</td>
+                                <td>Tunazzin Topu</td>
+                            </tr>
+                            <tr>
+
+                                <td>121</td>
+                                <td>9:40 PM -  9:50 PM</td>
+                                <td>Tunazzin Topu</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- profile info  section -->

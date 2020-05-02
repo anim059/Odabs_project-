@@ -1,0 +1,235 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@{
+    Layout = "~/Views/Shared/User_Layout.cshtml";
+}
+
+
+<!-- home image background section -->
+<div class="container-fluid">
+    <img src="~/image/home_image.jpg" class="img-fluid" alt="Responsive image">
+    <p class="text-block">Affordable Healthcare Anywhere, Anytime!</p>
+
+    <div class="search-combo ">
+        <form>
+            <h5>Find Your Doctor</h5>
+            <div class="form-box">
+                <select name="example" class="search-field">
+                    <option value="A">Family Physician</option>
+                    <option value="B">Gynecologist</option>
+                    <option value="-">Dentist</option>
+                </select>
+                <input type="text" class=" search-field" name="search" placeholder="Doctor Name">
+
+                <button type="button" class="search-btn">Search</button>
+            </div>
+    </div>
+
+</div>
+<!-- home image background section -->
+<!-- home find doctor section -->
+<div class="container-fluid">
+    <div class="fd_border">
+        <h3 class="fd_heading">Find Doctors by Speciality</h3>
+        <div class="fd_wrapper">
+            <div class="fd_wrapper_inner">
+                <h3>Family Physician</h3>
+            </div>
+            <div class="fd_wrapper_inner">
+                <h3>Gynecologist</h3>
+            </div>
+            <div class="fd_wrapper_inner">
+                <h3>Psychiatric</h3>
+            </div>
+            <div class="fd_wrapper_inner">
+                <h3>Dentist</h3>
+            </div>
+            <div class="fd_wrapper_inner">
+                <h3>Pediatric</h3>
+            </div>
+            <div class="fd_wrapper_inner">
+                <h3>Dietitian</h3>
+            </div>
+            <div class="fd_wrapper_inner">
+                <h3>Cardiologist</h3>
+            </div>
+            <div class="fd_wrapper_inner">
+                <h3>Dermatologist</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- home find doctor section -->
+<!-- home doctor section -->
+<div class="container-fluid">
+    <div class="wrapper ">
+        <h1 class="h1_border">Our Doctor</h1>
+
+        <div class="odabs_doctor">
+            <div class="odabs_doctor_member">
+                <img src="~/image/odabs_doc1.jpg" class="odabs_doctor_img">
+                <h3>Prof.Dr.Hasibur Rahman</h3>
+                <p>Skin Specialist</p>
+            </div>
+            <div class="odabs_doctor_member">
+                <img src="~/image/odabs_doc1.jpg" class="odabs_doctor_img">
+                <h3>Prof.Dr.Hasibur Rahman</h3>
+                <p>Skin Specialist</p>
+            </div>
+            <div class="odabs_doctor_member">
+                <img src="~/image/odabs_doc1.jpg" class="odabs_doctor_img">
+                <h3>Prof.Dr.Hasibur Rahman</h3>
+                <p>Skin Specialist</p>
+            </div>
+            <div class="odabs_doctor_member">
+                <img src="~/image/odabs_doc1.jpg" class="odabs_doctor_img">
+                <h3>Prof.Dr.Hasibur Rahman</h3>
+                <p>Skin Specialist</p>
+            </div>
+            <div class="odabs_doctor_member">
+                <img src="~/image/odabs_doc1.jpg" class="odabs_doctor_img">
+                <h3>Prof.Dr.Hasibur Rahman</h3>
+                <p>Skin Specialist</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- home doctor section -->
+<!-- home video conference section -->
+<div class="container-fluid">
+    <div class="vc_section">
+        <div><img src="~/image/video_conference.jpg" alt="Video confernece image" style="width: 155px; height: 262px; border-radius: 5px; margin-left:150px;  margin-top: 50px;"></div>
+        <div class="_vc_body">
+            <h1 class="vc_h1_border">VIDEO CONSULTATION </h1>
+
+            <p>
+                Conduct a video consultation. You will be able to join video consultion and you can also share  your problem with appropiate doctor .
+                We are creating a room in where you are given a time within that time you will be able to discuss your probelm your pescription and doctoc will give there opinion about your problem and will try to give proper solution.
+            </p>
+
+
+            @Html.ActionLink("Book an appointment", "Index", "Doctor", null, new { @class = "vc_btn" })
+
+
+        </div>
+    </div>
+</div>
+
+<!-- home video conference section -->
+<!-- home  help center section -->
+<div class="container-fluid">
+    <div class="hc_section">
+
+        <div class="_hc_body">
+            <h1 class="hc_h1_border">Help Center </h1>
+
+            <p>
+                Any Kind of emergeny you can contact us.
+                For any doctor, ambulance etc.
+            </p>
+            @Html.ActionLink("Help Center", "Index", "Help_center", null, new { @class = "home_hc_btn" })
+        </div>
+        <div><img src="~/image/help_center.jpg" alt="Video confernece image" style="width: 155px; height: 262px; border-radius: 5px; margin-left: 60px; margin-top: 50px;"></div>
+    </div>
+</div>
+
+<!-- home  help center section -->
+<!-- home  blog section -->
+<div class="container-fluid">
+    <div class="blog_body">
+        <h1 class="h1_border">Blogs</h1>
+    </div>
+    <section class="our-webcoderskull padding-lg">
+        <div class="container">
+            <ul class="row">
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="cnt-block equal-hight" style="height: 459px;">
+                        <figure><img src="~/image/Blogs/skin-hair-care-1.jpeg" class="img-responsive" alt=""></figure>
+                        <h3><a href="">WHY IS VITAMIN C NECESSARY?</a></h3>
+                        <p>
+                            Sed nibh nunc, commodo eget laoreet ut, fermentum at sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac ex sit amet erat interdum molestie. Proin vehicula eleifend dolor, elementum gravida tortor maximus a. Suspendisse fringilla tincidunt odio ac volutpat. Aliquam iaculis nibh id mauris
+                        </p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="cnt-block equal-hight" style="height: 459px;">
+                        <figure><img src="~/image/Blogs/14531729-l-1.jpeg" class="img-responsive" alt=""></figure>
+                        <h3><a href="">SURPRISING THINGS GREEN TEA CAN DO BESIDES REDUCING WEIGHT</a></h3>
+                        <p>
+                            Sed nibh nunc, commodo eget laoreet ut, fermentum at sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac ex sit amet erat interdum molestie. Proin vehicula eleifend dolor, elementum gravida tortor maximus a. Suspendisse fringilla tincidunt odio ac volutpat. Aliquam iaculis nibh id mauris
+                        </p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="cnt-block equal-hight" style="height: 459px;">
+                        <figure><img src="~/image/Blogs/17181516-l-1.jpeg" class="img-responsive" alt=""></figure>
+                        <h3><a href="">ABC OF DIABETES CONTROL</a></h3>
+                        <p>
+                            Sed nibh nunc, commodo eget laoreet ut, fermentum at sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac ex sit amet erat interdum molestie. Proin vehicula eleifend dolor, elementum gravida tortor maximus a. Suspendisse fringilla tincidunt odio ac volutpat. Aliquam iaculis nibh id mauris
+                        </p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="cnt-block equal-hight" style="height: 459px;">
+                        <figure><img src="~/image/Blogs/skin-hair-care-1.jpeg" class="img-responsive" alt=""></figure>
+                        <h3><a href="">WHY IS VITAMIN C NECESSARY?</a></h3>
+                        <p>
+                            Sed nibh nunc, commodo eget laoreet ut, fermentum at sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac ex sit amet erat interdum molestie. Proin vehicula eleifend dolor, elementum gravida tortor maximus a. Suspendisse fringilla tincidunt odio ac volutpat. Aliquam iaculis nibh id mauris
+                        </p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="cnt-block equal-hight" style="height: 459px;">
+                        <figure><img src="~/image/Blogs/14531729-l-1.jpeg" class="img-responsive" alt=""></figure>
+                        <h3><a href="">SURPRISING THINGS GREEN TEA CAN DO BESIDES REDUCING WEIGHT</a></h3>
+                        <p>
+                            Sed nibh nunc, commodo eget laoreet ut, fermentum at sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac ex sit amet erat interdum molestie. Proin vehicula eleifend dolor, elementum gravida tortor maximus a. Suspendisse fringilla tincidunt odio ac volutpat. Aliquam iaculis nibh id mauris
+                        </p>
+                    </div>
+                </li>
+                <li class="col-12 col-md-6 col-lg-4">
+                    <div class="cnt-block equal-hight" style="height: 459px;">
+                        <figure><img src="~/image/Blogs/17181516-l-1.jpeg" class="img-responsive" alt=""></figure>
+                        <h3><a href="">ABC OF DIABETES CONTROL</a></h3>
+                        <p>
+                            Sed nibh nunc, commodo eget laoreet ut, fermentum at sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ac ex sit amet erat interdum molestie. Proin vehicula eleifend dolor, elementum gravida tortor maximus a. Suspendisse fringilla tincidunt odio ac volutpat. Aliquam iaculis nibh id mauris
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="blog_btn_bd">
+                @Html.ActionLink("See more", "Index", "Blog", null, new { @class = "blog_btn" })
+            </div>
+    </section>
+</div>
+<!-- home  blog section -->
+<!-- home  all hospital section -->
+<div class="container-fluid">
+    <div class="hp_section">
+        <h1 class="hp_heading">Hospital's in Bangladesh</h1>
+    </div>
+
+    <div class="hp_body">
+
+        <div class="hp_body_inner">
+            <img src="~/image/apollo.jpg" class="">
+            <h3>Apollo Hospital</h3>
+        </div>
+        <div class="hp_body_inner">
+            <img src="~/image/apollo.jpg" class="">
+            <h3>Apollo Hospital</h3>
+        </div>
+        <div class="hp_body_inner">
+            <img src="~/image/apollo.jpg" class="">
+            <h3>Apollo Hospital</h3>
+        </div>
+
+    </div>
+</div>
+
+<!-- home  all hospital section -->

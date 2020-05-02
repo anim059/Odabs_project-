@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "AdminDocList";
+    Layout = "~/Areas/Admin/Views/Shared/Admin_layout.cshtml";
+}
+
+<!--admin part Doclist  section -->
+<div class="main">
+
+    <h1 class="ss_heading">Doctor List</h1>
+    <div class="container">
+        <div class="doc_search">
+
+            <form>
+                <h5>Search Doctor :</h5>
+                <input type="text" name="search">
+                <button type="button" class="search-btn">Search</button>
+            </form>
+
+        </div>
+        <div class="List_body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="List_heading">Doc Id</th>
+                        <th class="List_heading">Doctor Name</th>
+                        <th class="List_heading">Todays Appointments</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="List_text">1</th>
+                        <td class="List_text">Mark</td>
+                        <td class="List_text">Otto</td>
+                        <td><a href="" class="List_btn">Details</a></td>
+                        <td><a href="" class="List_btn">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <th class="List_text">2</th>
+                        <td class="List_text">Jacob</td>
+                        <td class="List_text">Thornton</td>
+                        <td><a href="" class="List_btn">Details</a></td>
+                        <td><a href="" class="List_btn">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <th class="List_text">3</th>
+                        <td class="List_text">Larry</td>
+                        <td class="List_text">the Bird</td>
+                        <td><a href="" class="List_btn">Details</a></td>
+                        <td><a href="" class="List_btn">Delete</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<!--admin part Doclist  section -->

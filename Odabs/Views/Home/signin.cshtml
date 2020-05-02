@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "signin";
+    Layout = "~/Views/Shared/without_nav.cshtml";
+}
+
+<!-- signup  side-->
+<div class="container-fluid">
+    <div class="signin_wrapper">
+        <div class="signin_wrapper_inner">
+            <img src="~/image/patient-side.jpg" class="signin_img">
+            <div class="centered_left">
+                @Html.ActionLink("Login as patient", "Login", "Account", null, new { @class = "signin_btn" })
+            </div>
+        </div>
+        <div class="signin_wrapper_inner">
+            <img src="~/image/doctor-side.jpg" class="signin_img">
+            <div class="centered_right">
+                @Html.ActionLink("Login as doctor", "DocLogin", "Account",new {area="Doctor"}, new { @class = "signin_btn" })
+            </div>
+        </div>
+    </div>
+</div>
+<!-- signup  side-->

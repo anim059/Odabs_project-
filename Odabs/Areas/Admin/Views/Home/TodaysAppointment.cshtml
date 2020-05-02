@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "TodaysAppointment";
+    Layout = "~/Areas/Admin/Views/Shared/Admin_layout.cshtml";
+}
+
+<div class="main">
+    <!--admin  check appoinment  section -->
+    <h1 class="ss_heading">Appointment with</h1>
+    <div class="List_body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="List_heading">Number</th>
+                    <th class="List_heading">Doc Name</th>
+                    <th class="List_heading">Hospital</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="List_text">1</th>
+                    <td class="List_text">Istiaque</td>
+                    <td class="List_text">Apollo</td>
+                    <td> @Html.ActionLink("See All Patient", "SeeAllPatient", "Home", new { area = "Admin" }, null)</td>
+                </tr>
+                <tr>
+                    <th class="List_text">2</th>
+                    <td class="List_text">Istiaque</td>
+                    <td class="List_text">Apollo</td>
+                    <td>@Html.ActionLink("See All Patient", "SeeAllPatient", "Home", new { area = "Admin" }, null)</td>
+                </tr>
+                <tr>
+                    <th class="List_text">3</th>
+                    <td class="List_text">Istiaque</td>
+                    <td class="List_text">Apollo</td>
+                    <td>@Html.ActionLink("See All Patient", "SeeAllPatient", "Home", new { area = "Admin" }, null)</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!--admin  check appoinment  section -->
+</div>
+
+

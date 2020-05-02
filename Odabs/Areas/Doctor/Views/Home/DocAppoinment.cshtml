@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "DocAppoinment";
+    Layout = "~/Areas/Doctor/Views/Shared/DocHome_layout.cshtml";
+}
+
+<!--doctor side middel section -->
+
+<div class="container">
+    <div class="dcblog_top_part">
+        <h4>Set Next session :</h4>
+        <div class="row">
+
+            <form>
+                <div class="form-group top_part">
+                    <label for="exampleInputEmail1">Date:</label>
+                    <input type="email" class="form-control" id="Date" aria-describedby="emailHelp" placeholder="">
+
+                </div>
+                <div class="form-group top_part">
+                    <label for="exampleInputPassword1">Time</label>
+                    <input type="password" class="form-control" id="Time" placeholder="">
+                </div>
+                <div class="form-group top_part">
+                    <label for="exampleInputPassword1">Slots</label>
+                    <input type="password" class="form-control" id="Slots" placeholder="">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="dcblog_bottom_part">
+        <h4>Todays All appointment:</h4>
+        <div class="row">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">appointment no</th>
+                        <th scope="col">patient name</th>
+                        <th scope="col">problem</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>mahmadul mahi</td>
+                        <td>bamaaj jahajka aka nahbannnnnnnnn naaaaaaaaa ajhdlddkdldd dsssssssssssssssssssssssssssssssssssssssssssssssssssskkkkkkkkkkkkk</td>
+                        <td><button class="btn btn-primary">Cancle</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td><button class="btn btn-primary">Cancle</button></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td><button class="btn btn-primary">Cancle</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!--doctor side middel section-->
