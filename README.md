@@ -4,6 +4,4 @@ for Database configaration go to web.config then  <connectionStrings> </connecti
 DataSource and DataBase name is "OdabsDb" it will create your database
 for Admin Registration go Url=".../Admin/Account/AdminRegistration"
 in there doctor signup is avalaivable
-# Odabs_project-
-# Odabs_project-
-# Odabs_project-
+
